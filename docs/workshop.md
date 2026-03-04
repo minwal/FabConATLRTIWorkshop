@@ -537,7 +537,7 @@ The clicks will be generated via a generator running in a workbook.
 
 ![alt text](assets/image_lab02_step06.png)
 
-7. in the published Eventstream **Click** `ClickstreamNBSource` node to access the settings/details.
+7. In the published Eventstream **Click** `ClickstreamNBSource` node to access the settings/details.
 
 ![alt text](assets/image_lab02_step07.png)
 

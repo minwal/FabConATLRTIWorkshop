@@ -625,23 +625,25 @@ The clicks will be generated via a generator running in a workbook.
 
 27. **Open** the existing `EH_YCSneakerEventStore` Eventhouse.
 
+28. **Open** the KQL database 'EH_YCSneakerEventStore'.
+
 ![alt text](assets/image_lab02_step26.png)
 
-28. **Click** on `EH_YCSneakerEventStore_queryset`, which is the default query editor of the Eventhouse.
+29. **Click** on `EH_YCSneakerEventStore_queryset`, which is the default query editor of the Eventhouse.
 
 ![alt text](assets/image_lab01_step20.png)
 
-29. **Navigate** to the github repo of this workshop [Clickstream Events KQL](https://aka.ms/FabConKQL2Url) in a separate tab.
+30. **Navigate** to the github repo of this workshop [Clickstream Events KQL](https://aka.ms/FabConKQL2Url) in a separate tab.
 
-30. **Copy** the `KQL code` from this file in the repo.
+31. **Copy** the `KQL code` from this file in the repo.
 
 ![alt text](assets/image_lab02_step29.png)
 
-31. **Paste** the copied KQL code in the `EH_YCSneakerEventStore_queryset`.
+32. **Paste** the copied KQL code in the `EH_YCSneakerEventStore_queryset`.
 
 ![alt text](assets/image_lab02_step30.png)
 
-32. **Rename** the tab as `Clickstream Events`.
+33. **Rename** the tab as `Clickstream Events`.
 
 ![alt text](assets/image_lab02_step31.png)
 
@@ -649,7 +651,7 @@ The clicks will be generated via a generator running in a workbook.
 
 ![alt text](assets/image_lab02_step32.png)
 
-34. **Check** the output as shown in the image below. A new function, table and an update policy must have been created in your workspace.
+35. **Check** the output as shown in the image below. A new function, table and an update policy must have been created in your workspace.
 
 ![alt text](assets/image_lab02_step33.png)
 
@@ -685,7 +687,7 @@ Notice that the electric motor starts and stops every 15 minutes so you will see
 
    ![alt text](assets/image_task04_step03.png)
 
-2. In the 'Select a data source' dialog **click** on the button `Connect`.
+2. In the 'Select a data source' dialog **click** on the button `Connect` next to Azure Event Hubs.
 
 ![alt text](assets/image_task04_step04.png)
 

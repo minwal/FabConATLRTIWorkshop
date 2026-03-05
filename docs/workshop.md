@@ -411,11 +411,11 @@ To achieve this, we start with ingesting these shipping events into Real-Time In
 
 ![alt text](assets/image_lab01_step04.png)
 
-5. **Keep the defaults** of Continuous Ingestion as `On` and `Connect to a storage account`. **Select** `FabConVienna 2025 Azure Subscription` as the Subscription.
+5. **Keep the defaults** of Continuous Ingestion as `On` and `Connect to a storage account`. **Select** `FabCon26 ATL Subscription` as the Subscription.
 
 ![alt text](assets/image_lab01_step05.png)
 
-6. **Select** `fabconvienna2025sa` as the Blob storage account.
+6. **Select** `fabconatlanta2026rtisa` as the Blob storage account.
 
 ![alt text](assets/image_lab01_step06.png)
 

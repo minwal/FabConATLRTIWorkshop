@@ -799,7 +799,7 @@ You will see some erratic behaviour in the current consumption with the electric
 
 ![alt text](assets/image_task04_step31.png)
 
-30. **Click** `Back to Eventhouse` to leave the Visual exploration. **Navigate to the KQL Queryset** named `EH_YCSneakerEventStore_queryset` within the database. We will use the KQL query language to turn the bronze table into two separate silver tables.
+30. **Click** `Back to` to leave the Visual exploration. **Navigate to the KQL Queryset** named `EH_YCSneakerEventStore_queryset` within the database. We will use the KQL query language to turn the bronze table into two separate silver tables.
 
 ![alt text](assets/image_task04_step35.png)
 
@@ -989,7 +989,7 @@ You will ingest the LoraWan data from an Azure Event Hub.
 
 ![alt text](assets/image_task05_step03.png)
 
-2. In the 'Select a data source' dialog **click** on the button `Connect`.
+2. In the 'Select a data source' dialog **click** on the button `Connect` next to Azure Event Hub.
 
 ![alt text](assets/image_task05_step04.png)
 

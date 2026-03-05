@@ -1536,7 +1536,7 @@ SilverLoraWanTemperature
 
 ![alt text](assets/image_task08_step02.png)
 
-5. Let's combine both gold queries so we have an overview of both LoraWan environmental sensor data and real-time weather data that offers both performance and enough details to add value. **Check out this query**.
+5. Let's combine both queries so we have an overview of both LoraWan environmental sensor data and real-time weather data that offers both performance and enough details to add value. **Check out this query**.
 
 ```
 let cutoff = ago(1h);

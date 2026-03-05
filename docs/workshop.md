@@ -1555,15 +1555,22 @@ GoldLoraWanTemperature
 
 ![alt text](assets/image_task08_step03.png)
 
-7. Because this is an interesting query to share with others within your team, having access to the same Microsoft Fabric workspace, let's turn this into a Real-Time Dashboard. **Put the cursor in the last query** so it is selected. **Click** `Pin to dashboard`.
+7. Because this is an interesting query to share with others within your team, having access to the same Microsoft Fabric workspace, let's turn this into a Real-Time Dashboard. **Put the cursor in the last query** so it is selected. **Click** `Save to Dashboard `.
+
+8. select pinning to a new dashboard by selecting `To a new Dashboard`.
 
 ![alt text](assets/image_task08_step04.png)
 
-8. A dialog is shown. First, select pinning to a new dashboard by selecting `In a new dashboard`. Then, **Name** the new dashboard `RTD_FactoryEvents` and **name** the tile within the dashboard, showing this query `Factory temperature vs. Weather data`. Finally, **Create** the dashboard.
+9. **Name** the new dashboard `RTD_FactoryEvents`. Finally, **Create** the dashboard.
+
+10. **Click** Open Dashboard
+
+![alt text](assets/image_task08_step12.png)
+
 
 ![alt text](assets/image_task08_step05.png)
 
-9. A Real-Time dashboard is shown. Notice that we are in 'Viewing' mode. A `Time range` of the last hour is shown, just above the tile we added. This is a 'parameter' (actually two: start time and end time) that can be applied to tiles like a filter. But if we change this `Time range` dropdown, nothing happens. The query is not noticing the `Time range` parameter change yet. Let's fix this. First, we turn the 'Viewing' mode into **Editing** mode.
+10. A Real-Time dashboard is shown. Notice that we are in 'Viewing' mode. A `Time range` of the last hour is shown, just above the tile we added. This is a 'parameter' (actually two: start time and end time) that can be applied to tiles like a filter. But if we change this `Time range` dropdown, nothing happens. The query is not noticing the `Time range` parameter change yet. Let's fix this. First, we turn the 'Viewing' mode into **Editing** mode.
 
 ![alt text](assets/image_task08_step06.png)
 

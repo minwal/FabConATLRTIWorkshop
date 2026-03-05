@@ -423,25 +423,6 @@ To achieve this, we start with ingesting these shipping events into Real-Time In
 
 ![alt text](assets/image_lab01_step07.png)
 
-8. **Select** `New connection` in the connection.
-
-![alt text](assets/image_lab01_step08.png)
-
-9. In the New connection pop up, keep the other defaults. **Paste** the `Connection name` as your 'user account'. For example, if you are 'FabCon User 002', paste that as the connection name.
-
-![alt text](assets/image_lab01_step09.png)
-
-10. **Click** `Save` for the new connection.
-
-![alt text](assets/image_lab01_step10.png)
-
-11. **Click** `Close` (instead of 'Save').
-
-![alt text](assets/image_lab01_step11.png)
-
-12. In the Connection drop down, **Select** the connection that you just created.
-
-![alt text](assets/image_lab01_step12.png)
 
 13. **Rename** the 'Eventstream Name' to `ES_ShippingEvents`.
 
@@ -502,6 +483,9 @@ To achieve this, we start with ingesting these shipping events into Real-Time In
 ![alt text](assets/image_lab01_step26.png)
 
 The incoming XML messages with shipping events are now made available in typed columns and available for querying.
+
+Notice the ShippingEvents table is empty, this is because an update policy is only applied to new data as it arrives in the RawShippingMsgs, existing data is ignored. You can re-append the RawShippingMsgs data back into the RawShippingMsgs table for the update policy to run and see the data flow through to ShippingEvents table by using the following KQL command.
+```.append RawShippingMsgs <| RawShippingMsgs```
 
 
 

@@ -835,7 +835,7 @@ SilverEnergyMeterVoltage
 policy update @'[{"Source": "BronzeEnergyMeter", "Query": "ParseVoltageTelemetry", "IsEnabled" : true, "IsTransactional": true }]'
 ```
 
-35. If no errors are shown, test the Table update policy. **Execute this query** (Notice that it can take a moment before the update policy is up and running and new rows start to occure in the 'SilverEnergyMeterVoltage' table).
+35. If no errors are shown, test the Table update policy. **Execute this query** (Notice that it can take a moment before the update policy is up and running and new rows start to occur in the 'SilverEnergyMeterVoltage' table).
 
 ```
 SilverEnergyMeterVoltage

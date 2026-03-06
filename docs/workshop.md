@@ -1375,15 +1375,15 @@ GoldLoraWanTemperature
 
 ![alt text](assets/image_task08_step05.png)
 
-10. A Real-Time dashboard is shown. Notice that we are in 'Viewing' mode. A `Time range` of the last hour is shown, just above the tile we added. This is a 'parameter' (actually two: start time and end time) that can be applied to tiles like a filter. But if we change this `Time range` dropdown, nothing happens. The query is not noticing the `Time range` parameter change yet. Let's fix this. First, we turn the 'Viewing' mode into **Editing** mode.
+11. A Real-Time dashboard is shown. Notice that we are in 'Viewing' mode. A `Time range` of the last hour is shown, just above the tile we added. This is a 'parameter' (actually two: start time and end time) that can be applied to tiles like a filter. But if we change this `Time range` dropdown, nothing happens. The query is not noticing the `Time range` parameter change yet. Let's fix this. First, we turn the 'Viewing' mode into **Editing** mode.
 
 ![alt text](assets/image_task08_step06.png)
 
-10. The tile supports two ways to edit it. **Edit** the tile.
+12. The tile supports two ways to edit it. **Edit** the tile.
 
 ![alt text](assets/image_task08_step07.png)
 
-11. The original query is shown with the 'hard-coded' one-hour cutoff. **Replace the original query** with the following version. Notice that we now use the `_startTime and _endTime` parameters. These parameters are available by default, but we can add additional parameters based on queries or hard-coded values (out of scope in this workshop). Notice that the `render` part of the query is also removed.
+13. The original query is shown with the 'hard-coded' one-hour cutoff. **Replace the original query** with the following version. Notice that we now use the `_startTime and _endTime` parameters. These parameters are available by default, but we can add additional parameters based on queries or hard-coded values (out of scope in this workshop). Notice that the `render` part of the query is also removed.
 
 ```
 GoldLoraWanTemperature
@@ -1396,23 +1396,23 @@ GoldLoraWanTemperature
 | order by timestamp asc, applicationId
 ```
 
-12. If you **run** the updated query and **change the Time range** to eg. 30 minutes, you see the time span of the line chart is updated automatically. Press **Apply changes** for the tile. **Save** the Dashboard changes. Notice that other parameters, like a filter of the available devices, could be added (out of scope in this workshop). Before we change the mode back to 'Viewing', we alter the Auto refresh. **Select** the `Manage tab`.
+14. If you **run** the updated query and **change the Time range** to eg. 30 minutes, you see the time span of the line chart is updated automatically. Press **Apply changes** for the tile. **Save** the Dashboard changes. Notice that other parameters, like a filter of the available devices, could be added (out of scope in this workshop). Before we change the mode back to 'Viewing', we alter the Auto refresh. **Select** the `Manage tab`.
 
 ![alt text](assets/image_task08_step08.png)
 
-13. **Open** the `Auto refresh` dialog. You need to **enable Auto refresh** and **set the default refresh rate** to `continuous`.
+15. **Open** the `Auto refresh` dialog. You need to **enable Auto refresh** and **set the default refresh rate** to `continuous`.
 
 ![alt text](assets/image_task08_step09.png)
 
-14. **Apply** the Auto refresh settings. You return to the Dashboard, still in 'Editing' mode. **Save** the changes again. **Change** the 'mode' back to `Viewing`. The tile is now showing the temperatures again. Let's check the interaction with the parameter. **Change it into 'last 30 minutes'**.
+16. **Apply** the Auto refresh settings. You return to the Dashboard, still in 'Editing' mode. **Save** the changes again. **Change** the 'mode' back to `Viewing`. The tile is now showing the temperatures again. Let's check the interaction with the parameter. **Change it into 'last 30 minutes'**.
 
 ![alt text](assets/image_task08_step10.png)
 
-15. Notice the Time range parameter dropdown is working now, fewer values are shown. We also notice that the Real-Time dashboard is now updated in real-time. **Click** the `Share` button.
+17. Notice the Time range parameter dropdown is working now, fewer values are shown. We also notice that the Real-Time dashboard is now updated in real-time. **Click** the `Share` button.
 
 ![alt text](assets/image_task08_step11.png)
 
-16. A pop-up dialog is shown, offering several ways to share this dashboard with other People in your organization. You can eg. copy a link and share it with them or share the link via email or Teams (out of scope for this workshop). Once you are ready with checking out this dialog, **cancel** it by clicking the cross in the upper right corner.
+18. A pop-up dialog is shown, offering several ways to share this dashboard with other People in your organization. You can eg. copy a link and share it with them or share the link via email or Teams (out of scope for this workshop). Once you are ready with checking out this dialog, **cancel** it by clicking the cross in the upper right corner.
 
 Queries we want to share with others are the ones we share in Real-Time Dashboards. We can make the tiles more interactive with the standard time span parameters or with custom parameters (based on queries or just hard-coded values).
 

@@ -15,7 +15,7 @@ tags: javascript, api, node.js          # Required. Tags for filtering and searc
 #audience: students                      # Optional. Audience of the workshop (students, pro devs, etc.)
 #wt_id: <cxa_tracking_id>                # Optional. Set advocacy tracking code for supported links
 #oc_id: <marketing_tracking_id>          # Optional. Set marketing tracking code for supported links
-#navigation_levels: 2                    # Optional. Number of levels displayed in the side menu (default: 2)
+navigation_levels: 3                    # Optional. Number of levels displayed in the side menu (default: 2)
 #navigation_numbering: true             # Optional. Enable numbering in the side menu (default: true)
 #sections_title: # Optional. Override titles for each section to be displayed in the side bar
 #  - Introduction
@@ -467,13 +467,14 @@ The incoming XML messages with shipping events are now made available in typed c
 24. **Provide** name and location for the Anomaly Detector
 ![alt text](assets/image_lab01_AD_step02.png)
 
-25. **Select** `Shipping Events` table in Eventhouse as the data source, select all 3 drop down values as shown in screenshot - value to watch, group by and timestamp. Then click `Save`.
+25. **Select** `ShippingEvents` table in Eventhouse as the data source, select all 3 drop down values as shown in screenshot - value to watch, group by and timestamp. Then **click** `Save`.
 ![alt text](assets/image_lab01_AD_step03.png)
 
-26. **Click** on `Analayse my data` button so it'll start analysing data for finding anomalies based on all the data in the table - live streaming and historical data.
+26. **Click** on `Analyze my data` button so it'll start analysing data for finding anomalies based on all the data in the table - live streaming and historical data.
+
 ![alt text](assets/image_lab01_AD_step04.png)
 
-27. It will generate graph with anomalies highlighted in red as shown in screenshot. You can filter based on instances, time and confidence level. You can also change the algorithm(if needed) based on your use case but it'll automatically recommend ML algorithm based on your trends and patterns in your data. 
+27. It will generate graph with anomalies highlighted in red as shown in screenshot. You can filter based on instances, time and confidence level. You can also change the algorithm(if needed) based on your use case but it'll automatically recommend ML algorithm based on the trends and patterns in your data. 
 ![alt text](assets/image_lab01_AD_step05.png)
 
 28. You can then publish these anomalies so anyone can subscribe and take action on them (this will not be covered in the lab).

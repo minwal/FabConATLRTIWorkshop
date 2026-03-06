@@ -88,6 +88,10 @@ All the **code** in this tutorial can be found here:
 
 - [Sander van de Velde](https://github.com/sandervandevelde), Microsoft MVP on Azure IoT & Real-Time Intelligence, Principal Architect, SDG Group
 - [Devang Shah](https://www.linkedin.com/in/shahdevang/), Principal Program Manager, Microsoft
+- [Frank Geisler](https://www.linkedin.com/in/frank-geisler/), Microsoft MVP, CEO/Owner, GDS Business Intelligence GmbH
+- [Edgar Cotte](https://www.linkedin.com/in/edgarcotte/?originalSubdomain=es), Sr. Program Manager at Fabric CAT, Microsoft
+- [Minni Walia](https://www.linkedin.com/in/minniwalia/), Principal Program Manager, Microsoft
+- [Heidi Hasting](https://www.linkedin.com/in/heidi-hasting-a068694/), Microsoft Data Platform MVP, Data Analytics Consultant.
 
 ## Contributing
 

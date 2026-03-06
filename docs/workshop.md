@@ -461,6 +461,24 @@ To achieve this, we start with ingesting these shipping events into Real-Time In
 
 The incoming XML messages with shipping events are now made available in typed columns and available for querying.
 
+23. **Create** Anomaly Detector as the data is now ready to be consumed.
+![alt text](assets/image_lab01_AD_step01.png)
+    
+24. **Provide** name and location for the Anomaly Detector
+![alt text](assets/image_lab01_AD_step02.png)
+
+25. **Select** `Shipping Events` table in Eventhouse as the data source, select all 3 drop down values as shown in screenshot - value to watch, group by and timestamp. Then click `Save`.
+![alt text](assets/image_lab01_AD_step03.png)
+
+26. **Click** on `Analayse my data` button so it'll start analysing data for finding anomalies based on all the data in the table - live streaming and historical data.
+![alt text](assets/image_lab01_AD_step04.png)
+
+27. It will generate graph with anomalies highlighted in red as shown in screenshot. You can filter based on instances, time and confidence level. You can also change the algorithm(if needed) based on your use case but it'll automatically recommend ML algorithm based on your trends and patterns in your data. 
+![alt text](assets/image_lab01_AD_step05.png)
+
+28. You can then publish these anomalies so anyone can subscribe and take action on them (this will not be covered in the lab).
+[Set alerts on anomaly detection events in Real-Time hub](https://learn.microsoft.com/en-us/fabric/real-time-hub/set-alerts-anomaly-detection)
+
 
 ### 2. Lab 02 - Factory Events
 

@@ -160,7 +160,7 @@ These are the tables and materialized views you will encounter today.
 | Name                      | Origin           | Description                                                  |
 | ------------------------- | ---------------- | ------------------------------------------------------------ |
 | **RawShippingsMsgs**      | Eventhouse table | Raw XML shipment notifications from the shipping companies   |
-| **ShippingNotifications** | Eventhouse table | Strongly typed tabl schema of raw XML shipping notifications |
+| **ShippingNotifications** | Eventhouse table | Strongly typed table schema of raw XML shipping notifications |
 
 ##### Lab 2
 

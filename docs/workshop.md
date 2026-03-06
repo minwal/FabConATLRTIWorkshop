@@ -1,7 +1,7 @@
 ---
 published: true                        # Optional. Set to true to publish the workshop (default: false)
 type: workshop                          # Required.
-title:Building Scalable Real-Time Solutions using Event-Driven Architectures with Microsoft Fabric              # Required. Full title of the workshop
+title: Building Scalable Real-Time Solutions using Event-Driven Architectures with Microsoft Fabric              # Required. Full title of the workshop
 short_title: Fabric Real-Time Intelligence Workshop     # Optional. Short title displayed in the header
 description: In this technical workshop, you will build a complete analytics platform with streaming data using Microsoft Fabric Real-Time Intelligence components and other features of Microsoft Fabric. This is a proctor-led workshop in which each section is accompanied by a technical overview of Fabric RTI components.  # Required.
 level: Can be 'beginner', 'intermediate' or 'advanced'                         # Required. Can be 'beginner', 'intermediate' or 'advanced'

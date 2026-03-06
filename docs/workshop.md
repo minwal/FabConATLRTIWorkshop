@@ -1436,27 +1436,20 @@ Microsoft Fabric OneLake is the single, unified, logical data lake for Microsoft
 
 Here, factory data from several 'silver' tables will be shared via OneLake so a Lakehouse can reference that data as tables too.
 
-1. The timeseries data in the KQL Database is not accessible by default in the Fabric OneLake. **Navigate** to the KQL Database `EH_YCSneakerEventStore` overview page and see that OneLake availability is disable:
 
-![alt text](assets/image_task09_step01.png)
-
-2. Although this option offers Onelake access for all tables, we can also enable it per table. **Enable OneLake availability** for all three 'silver' tables `SilverEnergyMeterCurrent`, `SilverEnergyMeterVoltage`, and `SilverLoraWanTemperature`.
-
-![alt text](assets/image_task09_step02.png)
-
-3. Now, the tables are accessible from other Fabric resource, eg. a Lakehouse. To create an Eventhouse, **click** on the button `+ New Item` in the workspace.
+1. To create an Lakehouse, **click** on the button `+ New Item` in the workspace.
 
 ![alt text](assets/image_task09_step03.png)
 
-4. In the pop-up window 'New item', filter and select `Lakehouse` while 'All items' is selected. Here we **filter** for items with `lakehouse` in the name. **Select** the Lakehouse.
+2. In the pop-up window 'New item', filter and select `Lakehouse` while 'All items' is selected. Here we **filter** for items with `lakehouse` in the name. **Select** the Lakehouse.
 
 ![alt text](assets/image_task09_step04.png)
 
-5. In the dialog 'New Lakehouse' **insert** `LH_FactoryEvents` as the name and **click** on `Create`.
+3. In the dialog 'New Lakehouse' **insert** `LH_FactoryEvents` as the name and **click** on `Create`.
 
 ![alt text](assets/image_task09_step05.png)
 
-6. After the Lakehouse has been created, it will be automatically opened. To access Eventhouse tables via OneLake, **add a shortcut**.
+4. After the Lakehouse has been created, it will be automatically opened. To access Eventhouse tables via OneLake, **add a shortcut**.
 
 ![alt text](assets/image_task09_step06.png)
 
@@ -1479,19 +1472,15 @@ Here, factory data from several 'silver' tables will be shared via OneLake so a 
 
 ![alt text](assets/image_task09_step09.png)
 
-8. Notice that KQL Database tables are available for selection. Those are the 'silver' tables we made available for OneLake.If the checkbox is displayed for each table but you are unable to select, wait and retry, it can take a moment for the tables to become available to the shortcut.
-
-![alt text](assets/image_task09_step11.png)
-
-9. **Select** all three `SILVER` tables via the check boxes and **press Next**.
+8. **Select** all three `SILVER` tables via the check boxes and **press Next**.
 
 ![alt text](assets/image_task09_step12.png)
 
-10. All three tables with real-time data will become available in the Lakehouse via OneLake shortcuts. **Create** the shortcuts.
+9. All three tables with real-time data will become available in the Lakehouse via OneLake shortcuts. **Create** the shortcuts.
 
 ![alt text](assets/image_task09_step13.png)
 
-11. The three KQL queries are now available in the Lakehouse.
+10. The three KQL queries are now available in the Lakehouse.
 
 ![alt text](assets/image_task09_step14.png)
 
@@ -1501,35 +1490,35 @@ Here, factory data from several 'silver' tables will be shared via OneLake so a 
 
 </div>
 
-12. We can also add context data about our factory in Lakehouse, like a list of production lines and operators. This 'enterprise' level data tells us under which circumstances the real-time data was created. **Upload files** via the associated button.
+11. We can also add context data about our factory in Lakehouse, like a list of production lines and operators. This 'enterprise' level data tells us under which circumstances the real-time data was created. **Upload files** via the associated button.
 
 ![alt text](assets/image_task09_step15.png)
 
-13. You are asked to upload files.
+12. You are asked to upload files.
 
 ![alt text](assets/image_task09_step16.png)
 
-14. Get the 'Operator.csv' and 'ProductionLine.csv' from this [GitHub location](https://github.com/microsoft/fabconrtiworkshop/tree/main/assets). **Download both files** and store them on your laptop as CSV format. Finally, **Click on the Files folder** bar, **select** the files, and **click** on the Upload button.
+13. Get the 'Operator.csv' and 'ProductionLine.csv' from this [GitHub location](https://github.com/microsoft/fabconrtiworkshop/tree/main/assets). **Download both files** and store them on your laptop as CSV format. Finally, **Click on the Files folder** bar, **select** the files, and **click** on the Upload button.
 
 ![alt text](assets/image_task09_step17.png)
 
-15. The two files are uploaded. You can **close** this dialog.
+14. The two files are uploaded. You can **close** this dialog.
 
 ![alt text](assets/image_task09_step18.png)
 
-16. The two files are now part of the Lakehouse. **Click** on the Files folder and notice the two files.
+15. The two files are now part of the Lakehouse. **Click** on the Files folder and notice the two files.
 
 ![alt text](assets/image_task09_step19.png)
 
-17. Let's turn these two files into tables too so we can work with them. **Hover over** the 'Operator.csv' file and there `...` (three dots) appear. This gives access to a menu, offering the ability to turn this file in a new table. **Create a new table** based on the `Operator` file.
+16. Let's turn these two files into tables too so we can work with them. **Hover over** the 'Operator.csv' file and there `...` (three dots) appear. This gives access to a menu, offering the ability to turn this file in a new table. **Create a new table** based on the `Operator` file.
 
 ![alt text](assets/image_task09_step20.png)
 
-18. Keep all settings and **Load** the `Operator` file into a new `operator` table.
+17. Keep all settings and **Load** the `Operator` file into a new `operator` table.
 
 ![alt text](assets/image_task09_step21.png)
 
-19. **Repeat** the last steps for the 'ProductionLine' file. **Create** an new label based on the `ProductionLine` file. **Load** the `ProductionLine` file into a new `productionline` table. Both tables with context data are added. Here we see the content of the 'ProductionLine' context data, showing that `line1` is operational and is producing 'vulcanized rubber'. Notice that both our electromotor and one of the LoraWan temperature sensors are related to this production line.
+18. **Repeat** the last steps for the 'ProductionLine' file. **Create** an new label based on the `ProductionLine` file. **Load** the `ProductionLine` file into a new `productionline` table. Both tables with context data are added. Here we see the content of the 'ProductionLine' context data, showing that `line1` is operational and is producing 'vulcanized rubber'. Notice that both our electromotor and one of the LoraWan temperature sensors are related to this production line.
 
 ![alt text](assets/image_task09_step22.png)
 

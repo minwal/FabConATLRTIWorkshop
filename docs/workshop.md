@@ -500,7 +500,7 @@ You will see some erratic behaviour in the current consumption with the electric
 
 ![alt text](assets/image_task04_step04.png)
 
-3. In the dialog 'Configure connection settings', **Select** `FabConEU2025 Factory Telemetry Connection` for the combobox 'Connection' and **insert** the name of the consumer group into the field 'Consumer group' that aligns with the username that was provided to you. In this case, this is `workshopuser49`. **Ensure** that the 'Data format' is `Json` and **click on the pencil** icon next to `Source name`.
+3. In the dialog 'Configure connection settings', **Select** `FabConAtlantaEventHubConnection` for the combobox 'Connection' and **insert** the name of the consumer group into the field 'Consumer group' that aligns with the username that was provided to you. In this case, this is `EVNTAttendee1`. **Ensure** that the 'Data format' is `Json` and **click on the pencil** icon next to `Source name`.
 
 ![alt text](assets/image_task04_step05.png)
 

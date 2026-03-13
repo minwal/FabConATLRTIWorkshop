@@ -373,6 +373,7 @@ YourCompany receives shipping events as XML files in an Azure storage account, f
 
 To achieve this, we start with ingesting these shipping events into Real-Time Intelligence components continuously as soon as they arrive in the storage account. We will setup an architecture to continuously listen to the shipping events.
 
+#### Lab 1.1 - Process XML Files
 1. In your workspace, **navigate** to the existing `EH_YCSneakerEventStore` Eventhouse.
 
 ![alt text](assets/image_lab01_step01.png)
@@ -465,6 +466,8 @@ To achieve this, we start with ingesting these shipping events into Real-Time In
 
 The incoming XML messages with shipping events are now made available in typed columns and available for querying.
 
+#### Lab 1.2 - Anomaly Detection
+
 23. **Create** Anomaly Detector as the data is now ready to be consumed.
 ![alt text](assets/image_lab01_AD_step01.png)
     
@@ -489,7 +492,7 @@ The incoming XML messages with shipping events are now made available in typed c
 
 Let's ingest energy meter events with power consumption telemetry measured on the Edge. coming from the electromotor available in our demo factory.
 
-#### Lab 02.1 - Create a new Energy Meter Telemetry Eventstream
+#### Lab 2.1 - Create a new Energy Meter Telemetry Eventstream
 
 In this section, we will be streaming Energy meter telemetry events (eg. current and voltage events from an electric motor). The events will be streamed into an Eventstream and be written into our Eventhouse KQL Database.
 
@@ -793,7 +796,7 @@ We now have a solid stream of Energy meter data, ingested from the Edge to the c
 
 Let's ingest LoraWan telemetry from all kinds of LoraWan sensors, implemented in a demo factory (like temperature sensors, vibration sensors, and even location trackers). We are especially interested in the telemetry sensors.
 
-#### Lab 02.2 - Create a new LoraWan Telemetry Eventstream
+#### Lab 2.2 - Create a new LoraWan Telemetry Eventstream
 
 In this section, we will be streaming LoraWan telemetry events (temperature events). The events will be streamed into an Eventstream and written into our Eventhouse KQL Database.
 
@@ -1040,7 +1043,7 @@ SilverLoraWanTemperature
 
 We have seen how we can ingest LoraWan telemetry from multiple devices via one Eventstream. The telemetry is ingested into a Bronze LoraWan table in the KQL Database via an elaborate table mapping. The Eventhouse supports the Medallion Architecture via table Update policies. Here, a Silver LoraWan table with temperature sensor telemetry is filled, complete with the correct column types. We have also seen how we can use the no-code Explore data to check the data in more detail. In the next paragraph, we will complete the temperature sensor data with data from a real-time weather data service.
 
-#### Lab 02.3 - Activator alerts based on high temperatures
+#### Lab 2.3 - Activator alerts based on high temperatures
 
 In this section, we will extend the LoraWan solution with an Activator, sending alerts under certain conditions. In our demo factory, the production output will have lower quality when the temperature in the factory is higher than 30 degrees Celsius. The Activator will send alert messages based on temperatures higher than 30 degrees Celsius within the factory, measured by our LoraWan temperature sensors.
 
@@ -1104,7 +1107,7 @@ We have experienced how we can use an Activator to turn events and KQL queries u
 
 Here, we used the KQL Queryset to trigger events. Within Microsoft Fabric, Activator integration is available at more places such as an Eventstream destination or PowerBI report integration.
 
-#### Lab 02.4 - Create a new Weather data Eventstream
+#### Lab 2.4 - Create a new Weather data Eventstream
 
 At this moment, we get energy meter telemetry from an electric motor within our demo factory and from several temperature sensors placed within the factory.
 
@@ -1325,7 +1328,7 @@ We also learned how we can query the table using the KQL query language using a 
 
 Finally, we learned about using a materialized view to de-duplicate rows and adding a retention time to limit the data storage.
 
-#### Lab 02.5 - Turning a KQL query into a dashboard for sharing
+#### Lab 2.5 - Turning a KQL query into a dashboard for sharing
 
 In this section, we mix the environmental data from the LoraWan sensors with the Real-Time weather data. The events will be queried both in a KQL Queryset and a Real-Time dashboard.
 
@@ -1445,7 +1448,7 @@ Finally, we can share these dashboards in several ways and limit the access (eg.
 
 Now, let's investigate how more traditional data lakes can benefit from real-time data.
 
-#### Lab 02.6 (Bonus) - Adding Lakehouse shortcuts to real-time data via OneLake
+#### Lab 2.6 (Bonus) - Adding Lakehouse shortcuts to real-time data via OneLake
 
 A Microsoft Fabric Lakehouse is a unified platform for storing, managing, and analyzing both structured and unstructured data, turning eg. CSV files into tables. Using more traditional SQL, these tables can be queried.
 

@@ -1448,11 +1448,11 @@ Finally, we can share these dashboards in several ways and limit the access (eg.
 
 Now, let's investigate how more traditional data lakes can benefit from real-time data.
 
-#### Lab 2.7 (Bonus) - Create Operations Agent
+#### Lab 2.6 (Bonus) - Create Operations Agent
 
 Operations Agent is an autonomous agent that automates real-time monitoring of assets and supports real-time decision-making through seamless collaboration between AI agents and human operators. You can assign goals and tasks to this agent using natural language and it can automatically generate playbook of rules and actions.
 
-1. To create an Operations agent, **click** on the button `+ New Item` in the workspace, **select** `Opeartions agent`
+1. To create an Operations agent, **click** on the button `+ New Item` in the workspace, **select** `Operations agent`
 
 ![alt text](assets/image_lab02_OA_step01.png)
 
@@ -1460,7 +1460,7 @@ Operations Agent is an autonomous agent that automates real-time monitoring of a
 
 ![alt text](assets/image_lab02_OA_step02.png)
 
-3. In the dialog 'Operations Agent' **provide** values for all items marked in red. Start by writing `Business goals` in natural language form e.g: `Continuously monitor temperature readings from LoRaWAN sensors and correlate them with weather data. Detect anomalies, threshold breaches, and weather-driven risks.`![alt text](assets/image_lab02_OA_step03.png)
+3. In the dialog 'Operations Agent' **provide** values for all items marked in red (see below image). Start by writing `Business goals` in natural language form e.g: `Continuously monitor temperature readings from LoRaWAN sensors and correlate them with weather data. Detect anomalies, threshold breaches, and weather-driven risks.`![alt text](assets/image_lab02_OA_step03.png)
 4. Write `Agent instructions` in natural language form e.g: `Continuously monitor temperature readings from LoRaWAN sensors and correlate them with weather data. Detect anomalies, threshold breaches, and weather-driven risks. Trigger alerts when:
 Temperature exceeds 18 
 Temperature rises faster than expected within a short time window
@@ -1478,7 +1478,7 @@ Weather is not sunny`
 11. In Power automate window, you can select any action like `send an email(v2)` but you won't be able to test this in the lab environment. But this will give you an idea on how to build an operations agent and set actions by using Power automate connectors with outlook, teams and many others. Once you save and start the Operations Agent, it will send messages in Microsft Teams whenever a rule is triggered to request approval from the human owner before proceeding.
 
 
-#### Lab 2.8 (Bonus) - Adding Lakehouse shortcuts to real-time data via OneLake
+#### Lab 2.7 (Bonus) - Adding Lakehouse shortcuts to real-time data via OneLake
 
 A Microsoft Fabric Lakehouse is a unified platform for storing, managing, and analyzing both structured and unstructured data, turning eg. CSV files into tables. Using more traditional SQL, these tables can be queried.
 

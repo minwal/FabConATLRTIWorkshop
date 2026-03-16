@@ -522,7 +522,11 @@ You will see some erratic behaviour in the current consumption with the electric
 
 ![alt text](assets/image_task04_step04.png)
 
-3. In the dialog 'Configure connection settings', **Select** `FabConAtlantaEventHubConnection` for the combobox 'Connection' and **insert** the name of the consumer group into the field 'Consumer group' that aligns with the username that was provided to you. In this case, this is `EVNTAttendee1`. **Ensure** that the 'Data format' is `Json` and **click on the pencil** icon next to `Source name`.
+3. In the dialog 'Configure connection settings', For the 'Connection' combobox **Select** 
+    - Users 1-100 select `FabConAtlantaEventHubConnection`
+    - Users 101-200 select `FabConAtlantaEventHubConnection2` 
+ 
+4. **insert** the name of the consumer group into the field 'Consumer group' that aligns with the username that was provided to you. In this case, this is `evntattendee1` (must be in lowercase). **Ensure** that the 'Data format' is `Json` and **click on the pencil** icon next to `Source name`.
 
 ![alt text](assets/image_task04_step05.png)
 
@@ -530,7 +534,7 @@ You will see some erratic behaviour in the current consumption with the electric
 
 ![alt text](assets/image_task04_step06.png)
 
-5. On the screen 'Review + Connect' **review** all of the information and then **click** on the button `Add`.
+5. On the screen 'Review + Connect' **review** all of the information and then **click** on the button `Add`. Then **click** 'Publish'
 
 ![alt text](assets/image_task04_step07.png)
 
